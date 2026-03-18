@@ -6,12 +6,12 @@ const benefits = [
   },
   {
     title: 'Carga rápida',
-    desc:  'Nadie espera páginas lentas. Webs optimizadas para máxima velocidad.',
+    desc:  'Optimización de rendimiento para una carga rápida en todos los dispositivos.',
     icon: <svg className="w-5 h-5 stroke-green-500" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
   },
   {
-    title: 'Formulario de contacto',
-    desc:  'Tus clientes te escriben directo desde la web, sin fricciones ni pasos de más.',
+    title: 'Integración con tus canales de contacto',
+    desc:  'Conectamos tu web con WhatsApp, Instagram o email para centralizar consultas fácilmente.',
     icon: <svg className="w-5 h-5 stroke-green-500" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,
   },
   {
@@ -21,7 +21,7 @@ const benefits = [
   },
   {
     title: 'Imagen profesional',
-    desc:  'Dale a tu negocio la presencia que merece y destacate de la competencia.',
+    desc:  'Transmití una presencia clara y cuidada que genere confianza desde el primer momento.',
     icon: <svg className="w-5 h-5 stroke-green-500" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>,
   },
 ]
@@ -39,8 +39,8 @@ export default function Beneficios() {
             Una web que <em className="not-italic text-green-500">trabaja para vos</em>
           </h2>
           <p className="text-base text-green-100/60 max-w-lg leading-relaxed">
-            Desarrollo páginas pensadas para mostrar tu negocio de forma clara, profesional
-            y enfocada en generar consultas y ventas.
+            Desarrollamos tu web para que tengas un espacio propio, organizado y 
+            listo para convertir visitas en consultas.
           </p>
         </div>
 
