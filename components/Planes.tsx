@@ -1,17 +1,48 @@
 const planes = [
   {
     badge:    'Plan Inicial',
-    name:     'Empezar',
+    name:     'Inicio',
     desc:     'Ideal para dar el primer paso online',
     featured: false,
-    features: ['Landing page (1 página)', 'Diseño responsive', 'Formulario de contacto', 'Entrega rápida'],
+    features: [
+                'Landing page (1 sola página)',
+                'Presentación clara de tu negocio y servicios',
+                'Integración con redes sociales',
+                'Diseño adaptable a celular y computadora',
+                'Carga rápida',
+                'Entrega en 3–5 días'
+              ],
   },
   {
     badge:    'Más elegido',
     name:     'Profesional',
     desc:     'Para negocios que quieren crecer',
     featured: true,
-    features: ['Web multipágina completa', 'Secciones personalizadas', 'SEO básico incluido', 'Integración con redes sociales'],
+    features: [
+                'Sitio web completo (hasta 4 secciones)',
+                'Presentación profesional de tu negocio y servicios',
+                'Formulario de contacto directo a tu email',
+                'Integración con redes sociales',
+                'Diseño adaptable a celular y computadora',
+                'Optimización básica para buscadores (SEO)',
+                'Entrega en 5–7 días'
+              ],
+  },
+
+  {
+    badge:    'Avanzado',
+    name:     'Avanzado',
+    desc:     'Para llevar tu presencia online al siguiente nivel',
+    featured: false,
+    features: [
+                'Sitio web completo (hasta 5 secciones)',
+                'Incluye sección como blog, galería o contenido adicional',
+                'Integración de herramientas (agenda, reservas o pagos simples)',
+                'Formulario de contacto directo a tu email',
+                'Diseño adaptable a celular y computadora',
+                'Optimización mejorada de velocidad y SEO',
+                'Entrega en 7–10 días'
+              ],
   },
 ]
 
@@ -25,10 +56,10 @@ export default function Planes() {
             Planes
           </span>
           <h2 className="text-4xl font-extrabold tracking-tighter mb-2">Elegí tu plan</h2>
-          <p className="text-[15px] text-green-100/60">Dos opciones claras para arrancar sin complicaciones.</p>
+          <p className="text-[15px] text-green-100/60">Tu página web lista para empezar a recibir consultas de clientes.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl">
           {planes.map((p) => (
             <div
               key={p.name}
