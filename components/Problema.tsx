@@ -1,8 +1,8 @@
 
 const benefits = [
+  'Organizar toda tu información en un solo lugar',
   'Mostrar tus productos o servicios con más detalle',
   'Explicar cómo trabajás y qué te diferencia',
-  'Organizar toda tu información en un solo lugar',
   'Dar una imagen profesional y confiable',
 ]
 
