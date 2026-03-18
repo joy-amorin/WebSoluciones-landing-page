@@ -1,7 +1,6 @@
 # Web Soluciones — Landing Page
 
 Landing page profesional con **Next.js 14 + React + TypeScript + Tailwind CSS v3**.
-Sin un solo archivo `.module.css` — 100% Tailwind.
 
 ## Estructura
 
