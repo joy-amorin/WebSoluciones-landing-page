@@ -34,4 +34,5 @@ coverage/
 # Vite
 vite.svg
 
+*Zone.Identifier
 .next/
