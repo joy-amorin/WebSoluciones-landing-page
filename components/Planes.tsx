@@ -79,21 +79,21 @@ export default function Planes() {
 
              <h3 className="text-2xl font-extrabold tracking-tighter mb-1">{p.name}</h3>
 
-<p className="text-[13px] text-green-100/40 mb-4">{p.desc}</p>
+                  <p className="text-[13px] text-green-100/40 mb-4">{p.desc}</p>
 
-{/* 💰 PRECIO */}
-<div className="mb-6">
-  <div className={`text-3xl font-extrabold tracking-tight ${
-    p.featured ? 'text-green-400' : ''
-  }`}>
-    {p.price}
-  </div>
-  <div className="text-xs text-green-100/40">
-    pago único
-  </div>
-</div>
+                  {/* 💰 PRECIO */}
+                  <div className="mb-6">
+                    <div className={`text-3xl font-extrabold tracking-tight ${
+                      p.featured ? 'text-green-400' : ''
+                    }`}>
+                      {p.price}
+                    </div>
+                    <div className="text-xs text-green-100/40">
+                      pago único
+                    </div>
+                  </div>
 
-<ul className="flex flex-col gap-3 mb-8 flex-1">
+                  <ul className="flex flex-col gap-3 mb-8 flex-1">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-center gap-3 text-sm text-green-100/60">
                     <span className="flex-shrink-0 w-[18px] h-[18px] rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center">
