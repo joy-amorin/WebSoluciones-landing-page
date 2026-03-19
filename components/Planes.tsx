@@ -1,8 +1,9 @@
 const planes = [
   {
-    badge:    'Plan Inicial',
-    name:     'Inicio',
-    desc:     'Ideal para dar el primer paso online',
+    badge:  'Plan Inicial',
+    name:   'Inicio',
+    desc:   'Ideal para dar el primer paso online',
+    price:  '80 USD',
     featured: false,
     features: [
                 'Landing page (1 sola página)',
@@ -10,13 +11,13 @@ const planes = [
                 'Integración con redes sociales',
                 'Diseño adaptable a celular y computadora',
                 'Carga rápida',
-                'Entrega en 3–5 días'
               ],
   },
   {
-    badge:    'Más elegido',
-    name:     'Profesional',
-    desc:     'Para negocios que quieren crecer',
+    badge:  'Más elegido',
+    name:   'Profesional',
+    desc:   'Para negocios que quieren crecer',
+    price:  '130 USD',
     featured: true,
     features: [
                 'Sitio web completo (hasta 4 secciones)',
@@ -25,23 +26,22 @@ const planes = [
                 'Integración con redes sociales',
                 'Diseño adaptable a celular y computadora',
                 'Optimización básica para buscadores (SEO)',
-                'Entrega en 5–7 días'
               ],
   },
 
   {
-    badge:    'Avanzado',
-    name:     'Avanzado',
-    desc:     'Para llevar tu presencia online al siguiente nivel',
+    badge:  'Avanzado',
+    name:   'Avanzado',
+    desc:   'Para llevar tu presencia online al siguiente nivel',
+    price:  '180 USD',
     featured: false,
     features: [
-                'Sitio web completo (hasta 5 secciones)',
-                'Incluye sección como blog, galería o contenido adicional',
-                'Integración de herramientas (agenda, reservas o pagos simples)',
+                'Sitio web completo: hasta 5 secciones, incluyendo blog, galería o contenido adicional.',
+                'Contacto directo: WhatsApp, Instagram o email.',
+                'Reservas y pagos simples:  integración con Calendly, Stripe, PayPal o Mercado Pago',
                 'Formulario de contacto directo a tu email',
                 'Diseño adaptable a celular y computadora',
                 'Optimización mejorada de velocidad y SEO',
-                'Entrega en 7–10 días'
               ],
   },
 ]
@@ -77,10 +77,23 @@ export default function Planes() {
                 {p.badge}
               </span>
 
-              <h3 className="text-2xl font-extrabold tracking-tighter mb-1">{p.name}</h3>
-              <p className="text-[13px] text-green-100/40 mb-7">{p.desc}</p>
+             <h3 className="text-2xl font-extrabold tracking-tighter mb-1">{p.name}</h3>
 
-              <ul className="flex flex-col gap-3 mb-8 flex-1">
+<p className="text-[13px] text-green-100/40 mb-4">{p.desc}</p>
+
+{/* 💰 PRECIO */}
+<div className="mb-6">
+  <div className={`text-3xl font-extrabold tracking-tight ${
+    p.featured ? 'text-green-400' : ''
+  }`}>
+    {p.price}
+  </div>
+  <div className="text-xs text-green-100/40">
+    pago único
+  </div>
+</div>
+
+<ul className="flex flex-col gap-3 mb-8 flex-1">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-center gap-3 text-sm text-green-100/60">
                     <span className="flex-shrink-0 w-[18px] h-[18px] rounded-full bg-green-500/10 border border-green-500/30 flex items-center justify-center">
