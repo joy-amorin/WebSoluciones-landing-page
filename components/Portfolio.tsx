@@ -3,14 +3,14 @@ const projects = [
     name: 'Deco Producciones',
     image: '/portfolio/deco-producciones.png',
     url: 'https://decoproducciones.com',
-    tag: 'Servicios',
+    tag: 'Servicio',
     desc: 'Stands de comida y bebida para eventos',
   },
   {
     name: 'Kurtco Producciones',
     image: '/portfolio/kurtco-producciones.png',
     url: 'https://kurtcoproducciones.com',
-    tag: 'Tienda',
+    tag: 'Servicio',
     desc: 'Productora musical enfocada en artistas emergentes',
   },
 ]
@@ -22,10 +22,9 @@ export default function Portfolio() {
 
         <div className="mb-10">
           <span className="inline-flex items-center bg-green-500/10 border border-green-500/30 text-green-300 text-[11px] font-medium tracking-widest uppercase px-4 py-[5px] rounded-full mb-4">
-            Trabajos
+            Prpyectos
           </span>
           <h2 className="text-4xl font-extrabold tracking-tighter mb-1">Algunos proyectos</h2>
-          <p className="text-sm text-green-100/40">Webs reales desarrolladas para clientes</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

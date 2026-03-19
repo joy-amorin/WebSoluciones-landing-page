@@ -1,7 +1,7 @@
 const steps = [
-  { num: '01', title: 'Me contás',   desc: 'Hablamos de tu negocio, objetivos y qué necesitás para arrancar.' },
-  { num: '02', title: 'Diseño',      desc: 'Creo el diseño personalizado de tu web, pensado para convertir.' },
-  { num: '03', title: 'Desarrollo',  desc: 'Construyo la web con ajustes y revisiones hasta que quede perfecta.' },
+  { num: '01', title: 'Analizamos tu proyecto',   desc: 'Hablamos de tu emprendimiento, objetivos y qué necesitás para comenzar.' },
+  { num: '02', title: 'Construcción',      desc: 'Construimos la base del sitio, adaptando la estructura y el contenido a tu negocio' },
+  { num: '03', title: 'Desarrollo',  desc: 'Desarrollamos la web con ajustes y revisiones hasta que quede perfecta.' },
   { num: '04', title: 'Online',      desc: 'Tu web queda publicada y lista para recibir clientes desde el día 1.' },
 ]
 
@@ -12,7 +12,7 @@ export default function Proceso() {
 
         <div className="mb-12">
           <span className="inline-flex items-center bg-green-500/10 border border-green-500/30 text-green-300 text-[11px] font-medium tracking-widest uppercase px-4 py-[5px] rounded-full mb-4">
-            Cómo trabajamos
+            Proceso
           </span>
           <h2 className="text-4xl font-extrabold tracking-tighter">Así trabajamos</h2>
         </div>
