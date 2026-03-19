@@ -46,22 +46,6 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Trust bar */}
-            <div className="flex items-center gap-6">
-              {[
-                { num: '+3x',    label: 'más consultas' },
-                { num: '100%',   label: 'responsive' },
-                { num: '7 días', label: 'entrega rápida' },
-              ].map((t, i) => (
-                <div key={t.num} className="flex items-center gap-6">
-                  <div className="flex flex-col gap-0.5">
-                    <span className="font-display font-extrabold text-xl text-green-500">{t.num}</span>
-                    <span className="text-xs text-green-100/40">{t.label}</span>
-                  </div>
-                  {i < 2 && <div className="w-px h-8 bg-border" />}
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* ── Right: Browser mockup ── */}
