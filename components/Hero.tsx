@@ -38,12 +38,6 @@ export default function Hero() {
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </a>
-              <a
-                href="#portfolio"
-                className="inline-flex items-center gap-2 border border-dark-highlight hover:border-green-500/50 hover:bg-green-500/5 text-slate-100 text-[15px] px-8 py-[14px] rounded-full transition-all"
-              >
-                Ver ejemplos
-              </a>
             </div>
 
           </div>
