@@ -24,7 +24,7 @@ export default function Hero() {
             {/* Subtitle */}
             <p className="text-base text-green-100/60 leading-relaxed mb-8 max-w-[480px]">
               Webs modernas y optimizadas para mostrar lo que hacés de forma profesional y facilitar
-              elcontacto con tus clientes.
+              el contacto con tus clientes.
             </p>
 
             {/* CTAs */}
