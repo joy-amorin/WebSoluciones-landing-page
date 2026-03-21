@@ -1,6 +1,6 @@
 const navLinks = [
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Trabajos',  href: '#portfolio' },
+  { label: 'Proyectos',  href: '#portfolio' },
   { label: 'Proceso',   href: '#proceso' },
   { label: 'Contacto',  href: '#contacto' },
 ]
@@ -20,7 +20,7 @@ export default function Footer() {
               web<em className="not-italic text-green-500">soluciones</em>
             </a>
             <p className="text-[13px] text-green-100/40 leading-relaxed max-w-[260px]">
-              Desarrollo web para emprendimientos que quieren crecer y conseguir más clientes.
+             Desarrollo de sitios web claros y funcionales para emprendimientos
             </p>
           </div>
 
@@ -41,9 +41,9 @@ export default function Footer() {
             <p className="text-[11px] font-medium tracking-widest uppercase text-green-100/30 mb-4">Contacto</p>
             <div className="flex flex-col gap-2.5 mb-5">
               <a href="mailto:hola@websoluciones.com" className="text-[13px] text-green-100/40 hover:text-green-300 transition-colors">
-                hola@websoluciones.com
+                contacto.websoluciones@gmail.com
               </a>
-              <a href="https://wa.me/59899000000" target="_blank" rel="noopener noreferrer" className="text-[13px] text-green-100/40 hover:text-green-300 transition-colors">
+              <a href="https://wa.me/59895381805" target="_blank" rel="noopener noreferrer" className="text-[13px] text-green-100/40 hover:text-green-300 transition-colors">
                 WhatsApp
               </a>
             </div>
@@ -53,14 +53,10 @@ export default function Footer() {
               {[
                 {
                   label: 'Instagram',
-                  href: '#',
+                  href: 'https://www.instagram.com/joy_amorin_',
                   icon: <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>,
                 },
-                {
-                  label: 'LinkedIn',
-                  href: '#',
-                  icon: <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>,
-                },
+                
               ].map((s) => (
                 <a
                   key={s.label}
@@ -79,7 +75,6 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-[12px] text-green-100/20">© {year} Web Soluciones. Todos los derechos reservados.</p>
-          <p className="text-[12px] text-green-100/20">Hecho con Next.js &amp; Tailwind CSS</p>
         </div>
 
       </div>

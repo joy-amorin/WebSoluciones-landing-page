@@ -29,7 +29,7 @@ export default function Contacto() {
 
             {/* Botón */}
             <a
-              href="https://wa.me/59899000000?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20web"
+              href="https://wa.me/598381805"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full max-w-sm flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-green-900 font-medium text-[15px] py-3.5 rounded-full transition-all hover:-translate-y-0.5"
@@ -50,7 +50,7 @@ export default function Contacto() {
                 </span>
 
                 <span className="w-[180px] text-left">
-                  +598 99 000 000
+                  +598 95 381 805
                 </span>
 
               </a>
@@ -66,13 +66,18 @@ export default function Contacto() {
                 </span>
 
                 <span className="w-[180px] text-left">
-                  hola@tudominio.com
+                  
+                  contacto.websoluciones@gmail.com
                 </span>
 
               </a>
 
               {/* Instagram */}
-              <a className="flex items-center justify-center gap-3 text-sm text-green-100/60 hover:text-green-300 transition-colors">
+              <a className="flex items-center justify-center gap-3 text-sm text-green-100/60 hover:text-green-300 transition-colors"
+              href="https://www.instagram.com/joy_amorin_"
+              target="_blank"
+              rel="noopener noreferrer">
+              
                 
                 <span className="w-8 h-8 min-w-8 flex items-center justify-center">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -83,7 +88,7 @@ export default function Contacto() {
                 </span>
 
                 <span className="w-[180px] text-left">
-                  @tuusuario
+                  @joy_amorin_
                 </span>
 
               </a>
