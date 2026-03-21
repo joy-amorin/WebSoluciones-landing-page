@@ -56,7 +56,7 @@ export default function Planes() {
             Planes
           </span>
           <h2 className="text-4xl font-extrabold tracking-tighter mb-2">Elegí tu plan</h2>
-          <p className="text-[15px] text-green-100/60">Tu página web lista para empezar a recibir consultas de clientes.</p>
+          <p className="text-[15px] text-green-100/60">Tu web lista para recibir consultas, sin mensualidad.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl">
