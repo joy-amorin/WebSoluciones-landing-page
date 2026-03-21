@@ -20,7 +20,7 @@ export default function Contacto() {
           </h2>
 
           <p className="text-[15px] text-green-100/60 leading-relaxed mb-10">
-           Describí tu proyecto y respondemos en menos de 24 h.
+           Describí tu proyecto y respondemos en menos de 24 hs.
             <br />
           </p>
 
