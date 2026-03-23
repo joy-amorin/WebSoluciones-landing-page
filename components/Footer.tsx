@@ -50,23 +50,16 @@ export default function Footer() {
 
             {/* Social icons */}
             <div className="flex gap-2">
-              {[
-                {
-                  label: 'Instagram',
-                  href: 'https://www.instagram.com/joy_amorin_',
-                  icon: <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>,
-                },
-                
-              ].map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="w-8 h-8 border border-border rounded-lg flex items-center justify-center text-green-100/40 hover:border-green-500 hover:text-green-300 transition-all"
-                >
-                  {s.icon}
-                </a>
-              ))}
+              <a  href="https://www.instagram.com/joy_amorin_"
+              target="_blan"
+              rel=" noopener noreferrer"
+               className="text-[13px] text-green-100/40 hover:text-green-300 transition-colors">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>,
+              </a>
+            
+                  
+               
+          
             </div>
           </div>
 
