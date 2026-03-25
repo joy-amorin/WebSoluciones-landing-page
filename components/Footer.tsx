@@ -50,7 +50,7 @@ export default function Footer() {
 
             {/* Social icons */}
             <div className="flex gap-2">
-              <a  href="https://www.instagram.com/joy_amorin_"
+              <a  href="https://www.instagram.com/websoluciones_uy"
               target="_blank"
               rel=" noopener noreferrer"
                className="text-[13px] text-green-100/40 hover:text-green-300 transition-colors">
