@@ -67,15 +67,15 @@ export default function Hero() {
                   <div className="bg-green-500/10 rounded-lg h-24" />
                   <div className="grid grid-cols-2 gap-2 content-start">
                     {[
-                      { n: '98',  l: 'Performance' },
-                      { n: 'SEO', l: 'Optimizado' },
-                      { n: '↑3x', l: 'Consultas', full: true },
+                      { n: 'Rápida',  l: 'Carga' },
+                      { n: 'Búsqueda', l: 'Optimizada' },
+                      { n: '↑+', l: 'Consultas', full: true },
                     ].map((s) => (
                       <div
                         key={s.n}
                         className={`bg-green-500/8 border border-green-500/20 rounded-lg p-3 text-center ${s.full ? 'col-span-2' : ''}`}
                       >
-                        <div className="font-display font-bold text-lg text-green-500">{s.n}</div>
+                        <div className="font-display font-bold text-sm text-green-500">{s.n}</div>
                         <div className="text-[10px] text-green-100/30 mt-0.5">{s.l}</div>
                       </div>
                     ))}
