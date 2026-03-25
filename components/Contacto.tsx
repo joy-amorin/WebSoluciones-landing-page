@@ -74,7 +74,7 @@ export default function Contacto() {
 
               {/* Instagram */}
               <a className="flex items-center justify-center gap-3 text-sm text-green-100/60 hover:text-green-300 transition-colors"
-              href="https://www.instagram.com/joy_amorin_"
+              href="https://www.instagram.com/websoluciones_uy"
               target="_blank"
               rel="noopener noreferrer">
               
@@ -88,7 +88,7 @@ export default function Contacto() {
                 </span>
 
                 <span className="w-[180px] text-left">
-                  @joy_amorin_
+                  @websoluciones_uy
                 </span>
 
               </a>
