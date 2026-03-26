@@ -62,19 +62,6 @@ href="mailto:TU_EMAIL"
 href="https://wa.me/TUNUMERO"  // sin + ni espacios, ej: 59899123456
 ```
 
-### Formulario
-`Contacto.tsx` tiene el `handleSubmit` listo para conectar.
-Opciones recomendadas (sin backend):
-
-**Formspree** (más simple):
-```tsx
-const res = await fetch('https://formspree.io/f/TU_ID', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(form),
-})
-```
-
 **EmailJS**:
 ```bash
 npm install @emailjs/browser
