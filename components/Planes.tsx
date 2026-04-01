@@ -22,7 +22,7 @@ const planes = [
     features: [
                 'Sitio web completo (hasta 4 secciones)',
                 'Presentación profesional de tu negocio y servicios',
-                'Formulario de contacto directo a tu email',
+                'Formulario de contacto',
                 'Integración con redes sociales',
                 'Diseño adaptable a celular y computadora',
                 'Optimización básica para buscadores (SEO)',
@@ -36,10 +36,10 @@ const planes = [
     price:  '180 USD',
     featured: false,
     features: [
-                'Sitio web completo: hasta 5 secciones, incluyendo blog, galería o contenido adicional.',
+                'Sitio web completo (hasta 5 secciones).',
                 'Contacto directo: WhatsApp, Instagram o email.',
                 'Reservas y pagos simples:  integración con Calendly, Stripe, PayPal o Mercado Pago',
-                'Formulario de contacto directo a tu email',
+                'Formulario de contacto',
                 'Diseño adaptable a celular y computadora',
                 'Optimización mejorada de velocidad y SEO',
               ],
