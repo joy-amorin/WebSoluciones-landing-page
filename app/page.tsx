@@ -3,6 +3,7 @@ import Hero       from '@/components/Hero'
 import Problema   from '@/components/Problema'
 import Beneficios from '@/components/Beneficios'
 import Planes     from '@/components/Planes'
+import ServiciosAdicionales from '@/components/ServiciosAdicionales'
 import Portfolio  from '@/components/Portfolio'
 import Proceso    from '@/components/Proceso'
 import Contacto   from '@/components/Contacto'
@@ -17,6 +18,7 @@ export default function Home() {
         <Problema />
         <Beneficios />
         <Planes />
+        <ServiciosAdicionales />
         <Portfolio />
         <Proceso />
         <Contacto />
