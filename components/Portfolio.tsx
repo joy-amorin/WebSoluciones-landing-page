@@ -11,6 +11,12 @@ const projects = [
     url: 'https://kurtcoproducciones.com',
     desc: 'Productora musical enfocada en artistas emergentes',
   },
+  {
+    name: 'Música, creadora digital',
+    image: '/portfolio/joy-amorin.png',
+    url: 'https://joyamorin.vercel.app',
+    desc: 'Artista',
+  },
 ]
 
 export default function Portfolio() {
@@ -27,38 +33,33 @@ export default function Portfolio() {
           </h2>
         </div>
 
-        {/* 👇 CLAVE: items-stretch */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p) => (
             <a
               key={p.name}
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col h-full bg-dark-surface border border-border rounded-2xl overflow-hidden hover:border-green-500/35 hover:-translate-y-1 transition-all duration-200"
+              className="group flex flex-col bg-dark-surface border border-border rounded-2xl overflow-hidden hover:border-green-500/30 hover:-translate-y-1 transition-all duration-200"
             >
               {/* Screenshot */}
-              <div className="h-52 overflow-hidden border-b border-border">
+              <div className="h-52 overflow-hidden">
                 <img
                   src={p.image}
                   alt={p.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
               {/* Body */}
-              <div className="p-4 flex flex-col flex-grow">
-                <h3 className="text-[15px] font-bold mb-1">
-                  {p.name}
-                </h3>
-
-                <p className="text-[13px] text-green-100/40 mb-2">
-                  {p.desc}
-                </p>
-
-                <span className="text-sm text-green-400 mt-auto">
-                  Ver web →
-                </span>
+              <div className="p-5 flex flex-col flex-grow">
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="text-[15px] font-medium">{p.name}</h3>
+                  <span className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-[13px] text-muted group-hover:border-green-500/40 group-hover:text-green-400 transition-colors">
+                    ↗
+                  </span>
+                </div>
+                <p className="text-[13px] text-green-100/40 leading-snug">{p.desc}</p>
               </div>
             </a>
           ))}
