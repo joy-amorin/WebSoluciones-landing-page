@@ -1,96 +1,56 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-28">
-      {/* Glow background */}
-      <div className="absolute -top-48 -right-24 w-[600px] h-[600px] bg-green-500/5 rounded-full blur-3xl pointer-events-none" />
-
+    <section className="relative overflow-hidden py-16 md:py-24 bg-[#d4d4d4]">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* ── Left ── */}
-          <div className="flex flex-col animate-fade-up">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 w-fit bg-green-500/10 border border-green-500/30 text-green-300 text-[11px] font-medium tracking-widest uppercase px-4 py-[5px] rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse-dot" />
-              Desarrollo web profesional
-            </div>
+          {/* LEFT */}
+          <div className="flex flex-col z-10">
 
-            {/* Heading */}
-            <h1 className="text-[42px] md:text-[52px] leading-[1.06] tracking-tighter font-extrabold mb-5">
-              Tu emprendimiento ya está en redes, necesitas una web{' '}
-              <em className="not-italic text-green-500">para vender mejor</em>
+            <h1 className="text-[42px] md:text-[52px] leading-[1.06] tracking-tighter font-extrabold mb-5 text-[#111]">
+              Tu emprendimiento ya está en redes, necesitás una web{" "}
+              <span className="text-emerald-600">para vender mejor</span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-base text-green-100/60 leading-relaxed mb-8 max-w-[480px]">
+            <p className="text-base text-[#333] leading-relaxed mb-8 max-w-[480px]">
               Webs modernas y optimizadas para mostrar lo que hacés de forma profesional y facilitar
               el contacto con tus clientes.
             </p>
 
-            {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-12">
               <a
                 href="#contacto"
-                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-green-900 font-medium text-[15px] px-8 py-[14px] rounded-full transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-[15px] px-8 py-[14px] rounded-full transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/20"
               >
                 Solicitar mi web
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
               </a>
             </div>
 
           </div>
 
-          {/* ── Right: Browser mockup ── */}
-          <div className="hidden lg:block relative animate-fade-up animate-delay-200">
-            <div className="bg-dark-surface border border-border rounded-2xl overflow-hidden">
-              {/* Browser bar */}
-              <div className="flex items-center gap-1.5 px-4 py-3 border-b border-border bg-dark-subtle">
-                <span className="w-2 h-2 rounded-full bg-[#E24B4A]" />
-                <span className="w-2 h-2 rounded-full bg-[#BA7517]" />
-                <span className="w-2 h-2 rounded-full bg-green-500" />
-                <div className="flex-1 ml-2 bg-border rounded h-[18px] flex items-center px-2">
-                  <span className="text-[10px] text-green-100/30">tuemprendimiento.com</span>
-                </div>
-              </div>
+          {/* RIGHT */}
+          <div className="hidden lg:flex items-center justify-center relative -translate-y-10">
 
-              {/* Screen content */}
-              <div className="p-4 flex flex-col gap-2">
-                <div className="bg-green-500/10 rounded-lg h-20" />
-                <div className="grid grid-cols-3 gap-2">
-                  {[...Array(3)].map((_, i) => (
-                    <div key={i} className="bg-green-500/10 rounded-lg h-9" />
-                  ))}
-                </div>
-                <div className="grid grid-cols-2 gap-2 mt-1">
-                  <div className="bg-green-500/10 rounded-lg h-24" />
-                  <div className="grid grid-cols-2 gap-2 content-start">
-                    {[
-                      { n: 'Rápida',  l: 'Carga' },
-                      { n: 'Búsqueda', l: 'Optimizada' },
-                      { n: '↑+', l: 'Consultas', full: true },
-                    ].map((s) => (
-                      <div
-                        key={s.n}
-                        className={`bg-green-500/8 border border-green-500/20 rounded-lg p-3 text-center ${s.full ? 'col-span-2' : ''}`}
-                      >
-                        <div className="font-display font-bold text-sm text-green-500">{s.n}</div>
-                        <div className="text-[10px] text-green-100/30 mt-0.5">{s.l}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+            {/* halo */}
+            <div className="absolute w-[380px] h-[380px] bg-emerald-500/10 rounded-full blur-[120px]" />
+
+            {/* IMPORTANTE: ya NO centramos verticalmente el contenido interno */}
+            <div className="relative flex flex-col items-start ">
+
+              <h2 className="text-[120px] font-extrabold leading-none tracking-tight text-[#111]">
+                WEB
+              </h2>
+
+              <h3 className="text-[44px] font-extrabold tracking-[0.2em] text-emerald-600">
+                SOLUCIONES
+              </h3>
+
+              <p className="mt-6 text-xs tracking-[0.20em] text-[#333] uppercase">
+                mostrá mejor, vendé más
+              </p>
+
             </div>
 
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-6 flex items-center gap-2 bg-dark-surface border border-green-500/40 text-green-300 text-xs font-medium px-4 py-2 rounded-full animate-fade-up animate-delay-600 whitespace-nowrap">
-              <svg className="w-3.5 h-3.5 stroke-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              Web publicada exitosamente
-            </div>
           </div>
 
         </div>

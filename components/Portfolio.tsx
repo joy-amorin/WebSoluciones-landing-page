@@ -18,51 +18,75 @@ const projects = [
     desc: 'Artista',
   },
 ]
-
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-20">
+    <section id="portfolio" className="bg-[#d4d4d4] border-y border-black/10 py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
-        <div className="mb-10">
-          <span className="inline-flex items-center bg-green-500/10 border border-green-500/30 text-green-300 text-[11px] font-medium tracking-widest uppercase px-4 py-[5px] rounded-full mb-4">
+        {/* HEADER */}
+        <div className="mb-12">
+          <span className="inline-flex items-center bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 text-[11px] font-medium tracking-widest uppercase px-4 py-[5px] rounded-full mb-4">
             Proyectos
           </span>
-          <h2 className="text-4xl font-extrabold tracking-tighter mb-1">
-            Algunos proyectos
+
+          <h2 className="text-4xl font-extrabold tracking-tighter mb-2 text-[#111]">
+            Algunos trabajos
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+
           {projects.map((p) => (
             <a
               key={p.name}
               href={p.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col bg-dark-surface border border-border rounded-2xl overflow-hidden hover:border-green-500/30 hover:-translate-y-1 transition-all duration-200"
+              className="group"
             >
-              {/* Screenshot */}
-              <div className="h-52 overflow-hidden">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+
+              <div className="relative">
+
+                {/* SOMBRA IZQUIERDA (extendida hacia abajo) */}
+                <div className="absolute inset-0 -translate-x-4 translate-y-4 bg-black/10 blur-[2px]" />
+
+                {/* SOMBRA INFERIOR (tu original, intacta) */}
+                <div className="absolute inset-0 translate-y-4 bg-black/10 blur-[2px]" />
+
+                {/* IMAGEN */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-[240px] object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+
               </div>
 
-              {/* Body */}
-              <div className="p-5 flex flex-col flex-grow">
+              {/* TEXT */}
+              <div className="mt-5">
+
                 <div className="flex items-center justify-between mb-1">
-                  <h3 className="text-[15px] font-medium">{p.name}</h3>
-                  <span className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-[13px] text-muted group-hover:border-green-500/40 group-hover:text-green-400 transition-colors">
+                  <h3 className="text-[16px] font-semibold text-emerald-600">
+                    {p.name}
+                  </h3>
+
+                  <span className="text-sm text-[#444] group-hover:text-emerald-600 transition-colors">
                     ↗
                   </span>
                 </div>
-                <p className="text-[13px] text-green-100/40 leading-snug">{p.desc}</p>
+
+                <p className="text-[13px] text-[#444] leading-snug">
+                  {p.desc}
+                </p>
+
               </div>
+
             </a>
           ))}
+
         </div>
 
       </div>

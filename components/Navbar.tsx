@@ -10,8 +10,8 @@ const links = [
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled]   = useState(false)
-  const [menuOpen, setMenuOpen]   = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 24)
@@ -28,9 +28,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+        
         {/* Logo */}
-        <a href="#" className="font-display font-extrabold text-lg tracking-tight">
-          web<em className="not-italic text-green-500">soluciones</em>
+        <a href="#" className="font-display font-extrabold text-lg tracking-tight text-white">
+          web<em className="not-italic text-emerald-500">soluciones</em>
         </a>
 
         {/* Desktop links */}
@@ -39,7 +40,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-green-100/60 hover:text-slate-100 transition-colors"
+              className="text-sm text-white/70 hover:text-white transition-colors"
             >
               {l.label}
             </a>
@@ -49,7 +50,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <a
           href="#contacto"
-          className="hidden md:inline-flex items-center bg-green-500 hover:bg-green-600 text-green-900 font-medium text-sm px-5 py-2 rounded-full transition-colors"
+          className="hidden md:inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-5 py-2 rounded-full transition-all hover:-translate-y-[1px]"
         >
           Solicitar mi web
         </a>
@@ -60,32 +61,36 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menú"
         >
-          <span className={`block w-[22px] h-[1.5px] bg-slate-100 transition-transform duration-250 ${menuOpen ? 'translate-y-[6.5px] rotate-45' : ''}`} />
-          <span className={`block w-[22px] h-[1.5px] bg-slate-100 transition-opacity duration-250 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-[22px] h-[1.5px] bg-slate-100 transition-transform duration-250 ${menuOpen ? '-translate-y-[6.5px] -rotate-45' : ''}`} />
+          <span className={`block w-[22px] h-[1.5px] bg-white transition-transform duration-250 ${menuOpen ? 'translate-y-[6.5px] rotate-45' : ''}`} />
+          <span className={`block w-[22px] h-[1.5px] bg-white transition-opacity duration-250 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-[22px] h-[1.5px] bg-white transition-transform duration-250 ${menuOpen ? '-translate-y-[6.5px] -rotate-45' : ''}`} />
         </button>
+
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden fixed inset-0 top-16 bg-dark-base flex flex-col items-center justify-center gap-10 z-40">
+
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="text-xl text-green-100/70 hover:text-slate-100 transition-colors"
+              className="text-xl text-white/70 hover:text-white transition-colors"
             >
               {l.label}
             </a>
           ))}
+
           <a
             href="#contacto"
             onClick={() => setMenuOpen(false)}
-            className="bg-green-500 text-green-900 font-medium px-8 py-3 rounded-full"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-8 py-3 rounded-full"
           >
             Solicitar mi web
           </a>
+
         </div>
       )}
     </header>
