@@ -46,7 +46,7 @@ export default function Hero() {
               </h3>
 
               <p className="mt-6 text-xs tracking-[0.20em] text-[#333] uppercase">
-                si se ve mejor, se vende más
+               se ve mejor, se vende más
               </p>
 
             </div>
