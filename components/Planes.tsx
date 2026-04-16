@@ -73,8 +73,8 @@ export default function Planes() {
               key={p.name}
               className={`relative rounded-2xl px-7 pt-14 pb-6 flex flex-col transition-all duration-300 group ${
                 p.featured
-                  ? 'bg-white border-2 border-emerald-500 shadow-md scale-[1.015]'
-                  : 'bg-white/60 border-2 border-black hover:-translate-y-1 hover:shadow-sm'
+                  ? 'bg-white border border-emerald-500 shadow-md scale-[1.015]'
+                  : 'bg-white/60 border border-black hover:-translate-y-1 hover:shadow-sm'
               }`}
             >
 
