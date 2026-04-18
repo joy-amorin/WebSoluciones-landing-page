@@ -1,54 +1,57 @@
 const planes = [
   {
-    name: 'Básico',
+    name: 'Inicio',
     desc: (
       <>
-        Sin tiempo para publicar en tu feed?{' '}
+        Contenido inicial para ordenar tu{' '}
         <span className="font-semibold text-emerald-600">
-          Publicaciones listas
+        presencia en instagram
         </span>{' '}
-        para usar.
       </>
     ),
     price: '20',
     featured: false,
-    result:
-      'Contenido simple y listo para mantener tu perfil activo sin esfuerzo.',
-    features: ['5 publicaciones (imagen + texto)'],
+
+    features: ['5 publicaciones (imagen + texto)',
+                'Diseño coherente con tu estilo',
+                'Textos listos para publicar',
+    ],
   },
   {
-    name: 'Profesional',
+    name: 'Constancia',
     desc: (
       <>
-        Publicar con{' '}
+       Contenido constante para{' '}
         <span className="font-semibold text-emerald-600">
-          constancia
+          mantener tu marca visible
         </span>{' '}
-        y mantener tu feed activo.
       </>
     ),
     price: '30',
     featured: true,
-    result:
-      'Un flujo constante de contenido que mantiene tu marca presente y visible.',
-    features: ['10 publicaciones (imagen + texto)'],
+
+    features: ['10 publicaciones (imagen + texto)',
+                'Estilo visual consitente',
+                'Textos optimizados para publicación clara',
+    ],
   },
   {
-    name: 'Avanzado',
+    name: 'Presencia',
     desc: (
       <>
-        Contenido suficiente para{' '}
+        Contenido para{' '}
         <span className="font-semibold text-emerald-600">
-          varias semanas
+          sostener tu presencia durante semanas
         </span>{' '}
         de publicaciones.
       </>
     ),
     price: '40',
     featured: false,
-    result:
-      'Mayor volumen de contenido para sostener tu presencia sin preocuparte.',
-    features: ['15 publicaciones (imagen + texto)'],
+    features: ['15 publicaciones (imagen + texto)',
+                'Consistencia visual en todo el pack',
+                'Contenido pensado para mantener tu feed activo por semanas',
+    ],
   },
 ]
 
@@ -60,13 +63,13 @@ export default function Planes() {
         {/* HEADER */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter mb-3 text-[#111]">
-            Contenido para redes
+           Contenido para Instagram que comunica tu marca
           </h2>
 
-          <p className="text-[15px] font-medium text-[#222]">
-            Publicaciones listas para tu feed:{' '}
+          <p className="text-[16px] md:text-[18px] font-medium text-[#111] leading-snug max-w-2xl mx-auto">
+            Publicaciones listas para mantener tu perfil{' '}
             <span className="text-emerald-600 font-semibold">
-              imagen + texto incluido
+              activo y profesional
             </span>.
           </p>
         </div>
@@ -119,9 +122,7 @@ export default function Planes() {
               </p>
 
               {/* RESULTADO */}
-              <p className="text-sm text-[#333] mb-5 leading-relaxed">
-                {p.result}
-              </p>
+  
 
               {/* FEATURES */}
               <ul className="flex flex-col gap-2.5 mb-6 flex-1">
