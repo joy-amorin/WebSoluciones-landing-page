@@ -18,7 +18,7 @@ const planes = [
       'Landing page (1 página)',
       'Diseño responsive (adaptado a móviles)',
       'Secciones clave (Presentación + Servicios + Contacto)',
-      'Botón a WhatsApp',
+      'Botón a WhatsApp, integración a redes sociales',
       'Deploy incluido (lista para mostrar)',
     ],
     idealSi: [
@@ -27,10 +27,6 @@ const planes = [
       { icon: '💼', text: 'Querés mostrar lo que hacés de forma profesional' },
       { icon: '⚡', text: 'Necesitás algo rápido para tener presencia online' },
     ],
-    cierre: {
-      normal: 'No necesitás algo complejo.',
-      bold: 'Necesitás algo claro, funcional y listo rápido.',
-    },
   },
   {
     name: 'Pro Presencia',
@@ -52,7 +48,7 @@ const planes = [
       'Diseño personalizado según tu proyecto',
       'Estructura pensada para mostrar mejor lo que hacés',
       'Formulario de contacto',
-      'Integración con redes sociales',
+      'Botón a WhatsApp, integración a redes sociales',
       'SEO básico (para que te encuentren en Google)',
       'Deploy incluido (lista para mostrar)',
     ],
@@ -191,15 +187,7 @@ export default function Planes() {
                   </li>
                 ))}
               </ul>
-
               <div className="h-px bg-black/10 mb-4" />
-
-              <p className="text-sm text-[#333]">
-                {p.cierre.normal}
-                <span className="block font-semibold text-[#111] mt-1">
-                  {p.cierre.bold}
-                </span>
-              </p>
             </div>
           ))}
         </div>
