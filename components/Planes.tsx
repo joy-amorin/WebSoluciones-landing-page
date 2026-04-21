@@ -7,7 +7,7 @@ const planes = [
         <span className="font-semibold text-emerald-600">
           profesional
         </span>{' '}
-        lista para compartir
+        lista para conseguir clientes
       </>
     ),
     price: '100',
@@ -15,17 +15,14 @@ const planes = [
     result:
       'Pasá de no tener presencia online a una web clara, profesional y lista en pocos días.',
     features: [
-      'Landing page (1 página)',
+      'Landing page (1 página, simple y efectiva)',
       'Diseño responsive (adaptado a móviles)',
       'Secciones clave (Presentación + Servicios + Contacto)',
       'Botón a WhatsApp, integración a redes sociales',
-      'Deploy incluido (lista para mostrar)',
+      'Deploy incluido (web online y lista para mostrar)',
     ],
     idealSi: [
-      { icon: '🌱', text: 'Estás empezando' },
-      { icon: '📱', text: 'Solo tenés Instagram como canal principal' },
-      { icon: '💼', text: 'Querés mostrar lo que hacés de forma profesional' },
-      { icon: '⚡', text: 'Necesitás algo rápido para tener presencia online' },
+      { icon: '🌱', text: 'Emprendedores y marcas personales que necesitan empezar rápido y verse profesionales desde el día uno.' },
     ],
   },
   {
@@ -44,20 +41,16 @@ const planes = [
     result:
       'Una web pensada para generar confianza y conseguir clientes.',
     features: [
-      '3–5 secciones',
+      '3–5 secciones (más completa y organizada)',
       'Diseño personalizado según tu proyecto',
-      'Estructura pensada para mostrar mejor lo que hacés',
-      'Formulario de contacto',
+      'Estructura estratégica para mostrar tus servicios y diferenciarte',
+      'Formulario de contacto (para captar consultas)',
       'Botón a WhatsApp, integración a redes sociales',
-      'SEO básico (para que te encuentren en Google)',
-      'Deploy incluido (lista para mostrar)',
+      'SEO básico (optimizada para aparecer en google)',
+      'Deploy incluido (web online y lista para usar)',
     ],
     idealSi: [
-      { icon: '📈', text: 'Ya tenés un proyecto en marcha' },
-      { icon: '🎯', text: 'Querés mostrar mejor lo que hacés' },
-      { icon: '✨', text: 'Necesitás una imagen más profesional' },
-      { icon: '🤝', text: 'Buscás generar confianza en quienes te visitan' },
-      { icon: '💬', text: 'Querés que tu web te ayude a conseguir clientes' },
+      { icon: '📈', text: 'Emprendedores y marcas que ya están en movimiento y necesitan una web más completa para atraer clientes.' },
     ],
     cierre: {
       normal: 'Tu web deja de ser solo presencia.',
@@ -176,7 +169,7 @@ export default function Planes() {
               style={{ boxShadow: '-5px 5px 0px rgba(16, 185, 129, 0.18)' }}
             >
               <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-600 mb-4">
-                Ideal para vos si…
+                Ideal para
               </p>
 
               <ul className="flex flex-col gap-2.5 mb-5 flex-1">
