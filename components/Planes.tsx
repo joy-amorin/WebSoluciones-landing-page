@@ -10,8 +10,9 @@ const planes = [
         lista para conseguir clientes
       </>
     ),
-    price: '100',
+    price: '180-250',
     featured: false,
+    promo: '100',
     result:
       'Pasá de no tener presencia online a una web clara, profesional y lista en pocos días.',
     features: [
@@ -36,8 +37,9 @@ const planes = [
         y mostrar tu valor
       </>
     ),
-    price: '180 – 220',
+    price: '350 – 500',
     featured: true,
+    promo: '180-200',
     result:
       'Una web pensada para generar confianza y conseguir clientes.',
     features: [
@@ -101,18 +103,32 @@ export default function Planes() {
                 </div>
               </div>
 
-              {/* PRECIO */}
-              <div className="absolute -top-8 right-5">
+              {/* PRECIO + PROMO */}
+              <div className="absolute -top-10 right-5 flex flex-col items-end gap-2">
+
+                {/* BADGE */}
+                <div className="bg-emerald-600 text-white text-[10px] font-semibold px-3 py-1 rounded-full shadow-sm">
+                  Promo lanzamiento
+                </div>
+
+                {/* CÍRCULO */}
                 <div
-                  className={`w-16 h-16 rounded-full flex flex-col items-center justify-center text-center transition-all duration-300 ${
+                  className={`w-20 h-20 rounded-full flex flex-col items-center justify-center text-center transition-all duration-300 ${
                     p.featured
-                      ? 'bg-emerald-600 text-white shadow-sm group-hover:scale-105'
+                      ? 'bg-emerald-600 text-white shadow-md group-hover:scale-105'
                       : 'bg-white border border-black/10 text-[#111] group-hover:scale-105'
                   }`}
                 >
-                  <span className="text-lg font-extrabold leading-none">{p.price}</span>
+                  <span className="text-[16px] font-extrabold leading-none">
+                    {p.promo}
+                  </span>
                   <span className="text-[10px] opacity-80 mt-[2px]">USD</span>
+
+                  <span className="text-[10px] opacity-60 line-through mt-[2px]">
+                    {p.price}
+                  </span>
                 </div>
+
               </div>
 
               {/* CONTENIDO */}
