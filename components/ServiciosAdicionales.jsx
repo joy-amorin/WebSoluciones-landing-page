@@ -1,27 +1,27 @@
-const planes = [
+const planesfeed = [
   {
     name: 'Inicio',
     desc: (
       <>
         Contenido inicial para ordenar tu{' '}
         <span className="font-semibold text-emerald-600">
-        presencia en instagram
+          presencia en instagram
         </span>{' '}
       </>
     ),
     price: '20',
     featured: false,
-
-    features: ['5 publicaciones (imagen + texto)',
-                'Diseño coherente con tu estilo',
-                'Textos listos para publicar',
+    features: [
+      '5 publicaciones (imagen + texto)',
+      'Diseño coherente con tu estilo',
+      'Textos listos para publicar',
     ],
   },
   {
     name: 'Constancia',
     desc: (
       <>
-       Contenido constante para{' '}
+        Contenido constante para{' '}
         <span className="font-semibold text-emerald-600">
           mantener tu marca visible
         </span>{' '}
@@ -29,10 +29,10 @@ const planes = [
     ),
     price: '30',
     featured: true,
-
-    features: ['10 publicaciones (imagen + texto)',
-                'Estilo visual consitente',
-                'Textos optimizados para publicación clara',
+    features: [
+      '10 publicaciones (imagen + texto)',
+      'Estilo visual consitente',
+      'Textos optimizados para publicación clara',
     ],
   },
   {
@@ -48,22 +48,23 @@ const planes = [
     ),
     price: '40',
     featured: false,
-    features: ['15 publicaciones (imagen + texto)',
-                'Consistencia visual en todo el pack',
-                'Contenido pensado para mantener tu feed activo por semanas',
+    features: [
+      '15 publicaciones (imagen + texto)',
+      'Consistencia visual en todo el pack',
+      'Contenido pensado para mantener tu feed activo por semanas',
     ],
   },
 ]
 
-export default function Planes() {
+export default function Planesfeed() {
   return (
     <section id="planes" className="bg-[#d4d4d4] border-y border-black/10 py-24">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
         {/* HEADER */}
         <div className="mb-16 text-center">
-          <h2 className="text-5xl md:text-4xl font-extrabold tracking-tighter mb-3 text-[#111]">
-           Contenido para Instagram que comunica tu marca
+          <h2 className="text-4xl font-extrabold tracking-tighter mb-3 text-[#111]">
+            Contenido para Instagram que comunica tu marca
           </h2>
 
           <p className="text-[16px] md:text-[18px] font-medium text-[#111] leading-snug max-w-2xl mx-auto">
@@ -77,7 +78,7 @@ export default function Planes() {
         {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-          {planes.map((p) => (
+          {planesfeed.map((p) => (
             <div
               key={p.name}
               className={`relative rounded-2xl px-6 pt-14 pb-6 flex flex-col transition-all duration-300 group ${
@@ -101,28 +102,29 @@ export default function Planes() {
               </div>
 
               {/* CÍRCULO PRECIO */}
-              <div className="absolute -top-8 right-5">
+             <div style={{ position: "absolute", top: -10, right: 15 }}>
                 <div
-                  className={`w-16 h-16 rounded-full flex flex-col items-center justify-center text-center transition-all duration-300 ${
+                  style={{ width: 64, height: 64 }}
+                  className={`rounded-full flex items-center justify-center ${
                     p.featured
-                      ? 'bg-emerald-600 text-white shadow-sm group-hover:scale-105'
-                      : 'bg-white border border-black/10 text-[#111] group-hover:scale-105'
+                      ? 'bg-emerald-600 text-white'
+                      : 'bg-white border border-black/10 text-[#111]'
                   }`}
                 >
-                  <span className="text-base font-extrabold leading-none">
-                    {p.price}
-                  </span>
-                  <span className="text-[9px] opacity-80">USD</span>
+                  <div className="text-center leading-none">
+                    <div className="text-base font-extrabold">
+                      {p.price}
+                    </div>
+                    <div className="text-[9px] opacity-80">
+                      USD
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              {/* TITULO */}
+              {/* DESCRIPCIÓN */}
               <p className="text-base font-medium text-[#222] mb-4 mt-4 leading-snug">
                 {p.desc}
               </p>
-
-              {/* RESULTADO */}
-  
 
               {/* FEATURES */}
               <ul className="flex flex-col gap-2.5 mb-6 flex-1">
