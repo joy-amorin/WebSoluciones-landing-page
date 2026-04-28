@@ -16,9 +16,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+         <Planificador />
         <Problema />
         <Beneficios />
-        <Planificador />
         <Planes />
         <ServiciosAdicionales />
         <Portfolio />
