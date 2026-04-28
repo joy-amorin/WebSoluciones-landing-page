@@ -8,6 +8,7 @@ import Portfolio  from '@/components/Portfolio'
 import Proceso    from '@/components/Proceso'
 import Contacto   from '@/components/Contacto'
 import Footer     from '@/components/Footer'
+import Planificador from '@/components/Planificador'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Problema />
         <Beneficios />
+        <Planificador />
         <Planes />
         <ServiciosAdicionales />
         <Portfolio />
