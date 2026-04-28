@@ -16,7 +16,7 @@ export default function Planner() {
           </span>
 
           <h2 className="text-4xl font-extrabold tracking-tighter text-[#111] mb-4">
-            Organizá tu semana con claridad
+            Organizá tu semana con foco y avanzá en tu negocio
           </h2>
 
           <p className="text-[15px] text-[#333] leading-relaxed">
