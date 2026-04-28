@@ -29,7 +29,7 @@ export default function Portfolio() {
             Proyectos
           </span>
 
-          <h2 className="text-4xl font-extrabold tracking-tighter mb-2 text-[#111]">
+          <h2 className="text-5xl md:text-4xl font-extrabold tracking-tighter mb-2 text-[#111]">
             Algunos proyectos
           </h2>
         </div>

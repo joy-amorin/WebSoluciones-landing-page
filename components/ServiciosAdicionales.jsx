@@ -62,7 +62,7 @@ export default function Planes() {
 
         {/* HEADER */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter mb-3 text-[#111]">
+          <h2 className="text-5xl md:text-4xl font-extrabold tracking-tighter mb-3 text-[#111]">
            Contenido para Instagram que comunica tu marca
           </h2>
 
