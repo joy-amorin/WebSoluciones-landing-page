@@ -25,7 +25,7 @@ export default function Planner() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
 
           {/* TEXT */}
           <div>
