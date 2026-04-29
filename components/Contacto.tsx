@@ -28,7 +28,7 @@ export default function Contacto() {
 
             {/* BOTÓN */}
             <a
-              href="https://wa.me/598381805"
+              href="https://wa.me/59894399771"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full max-w-sm flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-[15px] py-3.5 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-md"
@@ -49,7 +49,7 @@ export default function Contacto() {
                 </span>
 
                 <span className="w-[180px] text-left">
-                  +598 95 381 805
+                  +598 94 399 771
                 </span>
 
               </a>
