@@ -1,92 +1,88 @@
-const projects = [
-  {
-    name: 'Deco Producciones',
-    image: '/portfolio/deco-producciones.png',
-    url: 'https://decoproducciones.com',
-    desc: 'Stands de comida y bebida para eventos',
-  },
-  {
-    name: 'Kurtco Producciones',
-    image: '/portfolio/kurtco-producciones.png',
-    url: 'https://kurtcoproducciones.com',
-    desc: 'Productora musical enfocada en artistas emergentes',
-  },
-  {
-    name: 'Música, creadora digital',
-    image: '/portfolio/joy-amorin.png',
-    url: 'https://joyamorin.vercel.app',
-    desc: 'Artista',
-  },
-]
+import { projects } from '@/data/projects'
+
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="bg-[#d4d4d4] border-y border-black/10 py-20">
+    <section
+      id="portfolio"
+      className="bg-[#d4d4d4] border-y border-black/10 py-20"
+    >
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
         {/* HEADER */}
-        <div className="mb-12">
+        <div className="mb-14">
           <span className="inline-flex items-center bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 text-[11px] font-medium tracking-widest uppercase px-4 py-[5px] rounded-full mb-4">
-            Proyectos
+            Portfolio
           </span>
 
-          <h2 className="text-5xl md:text-4xl font-extrabold tracking-tighter mb-2 text-[#111]">
-            Algunos proyectos
+          <h2 className="text-5xl md:text-6xl font-extrabold tracking-tighter text-[#111]">
+            Proyectos seleccionados
           </h2>
         </div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
-
-          {projects.map((p) => (
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-20">
+          {projects.map((project) => (
             <a
-              key={p.name}
-              href={p.url}
+              key={project.name}
+              href={project.url}
               target="_blank"
               rel="noopener noreferrer"
               className="group"
             >
+              {/* MOCKUP */}
+              <div className="relative max-w-[420px] mx-auto">
 
-              <div className="relative">
+                {/* Desktop */}
+                <div className="overflow-hidden rounded-xl border border-black/10 bg-white shadow-lg transition-all duration-500 group-hover:-translate-y-1">
 
-                {/* SOMBRA IZQUIERDA (extendida hacia abajo) */}
-                <div className="absolute inset-0 -translate-x-4 translate-y-4 bg-black/10 blur-[2px]" />
+                  {/* Browser Bar */}
+                  <div className="h-8 border-b border-black/10 bg-[#f5f5f5] flex items-center px-3 gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full bg-black/20" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-black/20" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-black/20" />
+                  </div>
 
-                {/* SOMBRA INFERIOR (tu original, intacta) */}
-                <div className="absolute inset-0 translate-y-4 bg-black/10 blur-[2px]" />
+                  <div className="bg-white p-1">
+                    <img
+                      src={project.desktopImage}
+                      alt={project.name}
+                      className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                </div>
 
-                {/* IMAGEN */}
-                <div className="relative overflow-hidden">
+                {/* Mobile */}
+                <div className="absolute -bottom-4 right-3 w-[75px] md:w-[85px] overflow-hidden rounded-[16px] border-[4px] border-black bg-black shadow-xl transition-all duration-500 group-hover:-translate-y-2">
+
                   <img
-                    src={p.image}
-                    alt={p.name}
-                    className="w-full h-[240px] object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    src={project.mobileImage}
+                    alt={`${project.name} mobile`}
+                    className="w-full h-auto object-contain"
                   />
                 </div>
-
               </div>
 
-              {/* TEXT */}
-              <div className="mt-5">
+              {/* INFO */}
+              <div className="mt-8 text-center">
 
-                <div className="flex items-center justify-between mb-1">
-                  <h3 className="text-[16px] font-semibold text-emerald-600">
-                    {p.name}
-                  </h3>
+                {project.category && (
+                  <p className="text-[11px] uppercase tracking-[0.18em] text-emerald-600 mb-2">
+                    {project.category}
+                  </p>
+                )}
 
-                  <span className="text-sm text-[#444] group-hover:text-emerald-600 transition-colors">
-                    ↗
-                  </span>
-                </div>
+                <h3 className="text-xl font-semibold text-[#111]">
+                  {project.name}
+                </h3>
 
-                <p className="text-[13px] text-[#444] leading-snug">
-                  {p.desc}
-                </p>
+                <span className="inline-flex items-center gap-2 mt-3 text-sm text-[#444] transition-all group-hover:text-emerald-600 group-hover:gap-3">
+                  Ver proyecto
+                  <span>→</span>
+                </span>
 
               </div>
-
             </a>
           ))}
-
         </div>
 
       </div>
