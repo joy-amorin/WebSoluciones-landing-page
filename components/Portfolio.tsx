@@ -15,9 +15,9 @@ export default function Portfolio() {
           </span>
 
           <h2 className="text-4xl font-extrabold tracking-tighter mb-3 text-[#111]">
-            Proyectos{' '}
+            Algunos{' '}
         <span className="text-4xl font-extrabold tracking-tighter mb-3 text-emerald-600">
-          Seleccionados
+          Proyectos
 
         </span>{' '}
           </h2>
