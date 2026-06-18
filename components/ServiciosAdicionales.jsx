@@ -84,7 +84,7 @@ export default function Planesfeed() {
               className={`relative rounded-2xl px-6 pt-14 pb-6 flex flex-col transition-all duration-300 group ${
                 p.featured
                   ? 'bg-white border border-emerald-500 shadow-md scale-[1.02]'
-                  : 'bg-white/60 border border-black hover:-translate-y-1 hover:shadow-sm'
+                  : 'bg-white border border-black hover:-translate-y-1 hover:shadow-sm'
               }`}
             >
 

@@ -9,7 +9,7 @@ export default function Problema() {
   return (
     <section
       id="problema"
-      className="bg-[#d4d4d4] border-y border-black/10 py-20"
+      className="bg-[#ffffff] border-y border-black/10 py-20"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
@@ -41,7 +41,7 @@ export default function Problema() {
             {benefits.map((p) => (
               <div
                 key={p}
-                className="flex items-start gap-3 bg-white/50 border border-emerald-500/60 rounded-xl px-4 py-3 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-md"
+                className="flex items-start gap-3 bg-[#f5f5f5] border border-[#111] rounded-xl px-4 py-3 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-md"
               >
                 <span className="mt-0.5 flex-shrink-0 w-[18px] h-[18px] rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
                   <svg

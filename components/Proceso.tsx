@@ -33,12 +33,12 @@ export default function Proceso() {
               )}
 
               {/* Number */}
-              <div className="relative z-10 w-11 h-11 rounded-full bg-white/50 border border-emerald-500/70 flex items-center justify-center font-bold text-sm text-emerald-700 mb-5">
+              <div className="relative z-10 w-11 h-11 rounded-full bg-white/50 border border-[#111] flex items-center justify-center font-bold text-sm text-emerald-700 mb-5">
                 {s.num}
               </div>
 
               {/* Card */}
-              <div className="bg-white/40 border border-emerald-500/70 rounded-xl p-4 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-md">
+              <div className="bg-white border border-[#111] rounded-xl p-4 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-md">
                 <h3 className="text-[15px] font-bold mb-2 text-[#111]">
                   {s.title}
                 </h3>
@@ -53,7 +53,7 @@ export default function Proceso() {
         </div>
 
         {/* FOOTNOTE */}
-        <p className="mt-12 text-center text-sm text-[#444] italic">
+        <p className="mt-12 text-center text-sm text-[#111] italic">
           Proceso simple, rápido y sin complicaciones.
         </p>
 

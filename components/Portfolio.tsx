@@ -4,7 +4,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="bg-[#d4d4d4] border-y border-black/10 py-20"
+      className="bg-[#ffffff] border-y border-black/10 py-20"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 

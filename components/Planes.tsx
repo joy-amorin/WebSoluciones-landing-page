@@ -63,7 +63,7 @@ const planes = [
 
 export default function Planes() {
   return (
-    <section id="planes" className="bg-[#d4d4d4] border-y border-black/10 py-24">
+    <section id="planes" className="bg-[#ffffff] border-y border-black/10 py-24">
       <div className="max-w-5xl mx-auto px-6 md:px-10">
 
         {/* HEADER */}
@@ -86,8 +86,8 @@ export default function Planes() {
               key={p.name}
               className={`relative rounded-2xl px-7 pt-14 pb-6 flex flex-col transition-all duration-300 group ${
                 p.featured
-                  ? 'bg-white border border-emerald-500 shadow-md scale-[1.015]'
-                  : 'bg-white/60 border border-black hover:-translate-y-1 hover:shadow-sm'
+                  ? 'bg-[#f5f5f5] border border-emerald-500 shadow-md scale-[1.015]'
+                  : 'bg-[#f5f5f5] border border-black hover:-translate-y-1 hover:shadow-sm'
               }`}
             >
               {/* NOMBRE */}
@@ -181,7 +181,7 @@ export default function Planes() {
           {planes.map((p) => (
             <div
               key={p.name + '-ideal'}
-              className="rounded-2xl border border-black/10 bg-white/50 px-5 py-4 flex flex-col"
+              className="rounded-2xl border border-black/10 bg-[#f5f5f5] px-5 py-4 flex flex-col"
               style={{ boxShadow: '-5px 5px 0px rgba(16, 185, 129, 0.18)' }}
             >
               <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-600 mb-4">

@@ -4,7 +4,7 @@ export default function Contacto() {
   return (
     <section
       id="contacto"
-      className="bg-[#d4d4d4] border-y border-black/10 py-20"
+      className="bg-[#1a1a1a] border-y border-black/10 py-20"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
@@ -15,11 +15,11 @@ export default function Contacto() {
             Contacto
           </span>
 
-          <h2 className="text-[42px] font-extrabold tracking-tighter leading-[1.05] mb-4 text-[#111]">
+          <h2 className="text-[42px] font-extrabold tracking-tighter leading-[1.05] mb-4 text-white">
             ¿Comenzamos tu web?
           </h2>
 
-          <p className="text-[15px] text-[#444] leading-relaxed mb-10">
+          <p className="text-[15px] text-white leading-relaxed mb-10">
             Describí tu proyecto y respondemos en menos de 24 hs.
           </p>
 
@@ -40,7 +40,7 @@ export default function Contacto() {
             <div className="flex flex-col gap-3 w-full max-w-sm">
 
               {/* ITEM */}
-              <a className="flex items-center justify-center gap-3 text-sm text-[#555] hover:text-emerald-600 transition-colors">
+              <a className="flex items-center justify-center gap-3 text-sm text-white hover:text-emerald-600 transition-colors">
                 
                 <span className="w-8 h-8 min-w-8 flex items-center justify-center text-emerald-600">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -55,7 +55,7 @@ export default function Contacto() {
               </a>
 
               {/* EMAIL */}
-              <a className="flex items-center justify-center gap-3 text-sm text-[#555] hover:text-emerald-600 transition-colors">
+              <a className="flex items-center justify-center gap-3 text-sm text-white hover:text-emerald-600 transition-colors">
                 
                 <span className="w-8 h-8 min-w-8 flex items-center justify-center text-emerald-600">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -75,7 +75,7 @@ export default function Contacto() {
                 href="https://www.instagram.com/websoluciones_uy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 text-sm text-[#555] hover:text-emerald-600 transition-colors"
+                className="flex items-center justify-center gap-3 text-sm text-white hover:text-emerald-600 transition-colors"
               >
                 
                 <span className="w-8 h-8 min-w-8 flex items-center justify-center text-emerald-600">
