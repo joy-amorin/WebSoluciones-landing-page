@@ -9,17 +9,17 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#d4d4d4] border-t border-black/10 pt-14 pb-8">
+    <footer className="bg-[#1a1a1a] border-t border-black/10 pt-14 pb-8">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
 
           {/* Brand */}
           <div className="sm:col-span-2 md:col-span-1">
-            <a href="#" className="font-extrabold text-lg tracking-tight block mb-3 text-[#111]">
+            <a href="#" className="font-extrabold text-lg tracking-tight block mb-3 text-white">
               web<em className="not-italic text-emerald-600">soluciones</em>
             </a>
-            <p className="text-[13px] text-[#444] leading-relaxed max-w-[260px]">
+            <p className="text-[13px] text-white leading-relaxed max-w-[260px]">
               Desarrollo de sitios web claros y funcionales para emprendimientos
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function Footer() {
                 <a
                   key={l.href}
                   href={l.href}
-                  className="text-[13px] text-[#555] hover:text-emerald-600 transition-colors"
+                  className="text-[13px] text-white hover:text-emerald-600 transition-colors"
                 >
                   {l.label}
                 </a>
@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2.5 mb-5">
               <a
                 href="mailto:contacto.websoluciones@gmail.com"
-                className="text-[13px] text-[#555] hover:text-emerald-600 transition-colors"
+                className="text-[13px] text-white hover:text-emerald-600 transition-colors"
               >
                 contacto.websoluciones@gmail.com
               </a>
@@ -60,7 +60,7 @@ export default function Footer() {
                 href="https://wa.me/59894399771"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[13px] text-[#555] hover:text-emerald-600 transition-colors"
+                className="text-[13px] text-white hover:text-emerald-600 transition-colors"
               >
                 WhatsApp
               </a>
@@ -72,7 +72,7 @@ export default function Footer() {
                 href="https://www.instagram.com/websoluciones_uy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#555] hover:text-emerald-600 transition-colors"
+                className="text-white hover:text-emerald-600 transition-colors"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
@@ -87,7 +87,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-black/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="text-[12px] text-[#777]">
+          <p className="text-[12px] text-white">
             © {year} Web Soluciones. Todos los derechos reservados.
           </p>
         </div>

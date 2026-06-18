@@ -74,7 +74,7 @@ export default function Beneficios() {
           {benefits.map((b) => (
             <div
               key={b.title}
-              className="bg-white/40 border border-emerald-500/70 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-md"
+              className="bg-white border border-[#111] rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/30 hover:shadow-md"
             >
               <div className="w-10 h-10 bg-emerald-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center mb-4">
                 {b.icon}
